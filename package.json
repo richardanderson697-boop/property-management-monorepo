@@ -1,0 +1,17 @@
+{
+  "name": "property-management-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:rentstream-api": "npm run dev --workspace=apps/api",
+    "dev:parkstream-api": "npm run dev --workspace=apps/parkstream-api",
+    "dev:rentstream-mobile": "npm run start --workspace=apps/mobile",
+    "dev:parkstream-mobile": "npm run start --workspace=apps/parkstream-mobile",
+    "build:all": "npm run build --workspaces",
+    "test:all": "npm run test --workspaces",
+    "lint:all": "npm run lint --workspaces"
+  }
+}
